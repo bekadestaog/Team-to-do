@@ -1,21 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tasks</title>
-</head>
-<body>
-    <h1>My Tasks</h1>
+/* Base Page Resets & Variables */
+:root {
+  --primary-color: #3b82f6;
+  --text-color: #1f2937;
+  --bg-color: #f9fafb;
+}
 
-    <form>
-        <input type="text" placeholder="Enter a new task">
-        <button type="submit">Add Task</button>
-    </form>
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
 
-    <ul>
-        <li>Learn Git branches</li>
-        <li>Practice Pull Requests</li>
-    </ul>
-</body>
-</html>
+/* Typography */
+h1, h2, h3 {
+  color: #111827;
+  margin-top: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Base Components */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
